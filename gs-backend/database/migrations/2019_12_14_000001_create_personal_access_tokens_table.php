@@ -17,7 +17,9 @@ public function up()
     Schema::create('empresas', function (Blueprint $table) {
         $table->increments('id');
         $table->string('nome');
+        $table->int('idade');
         $table->string('cnpj');
+        $table->string('fazenda');
         $table->timestamps();
     });
 }
